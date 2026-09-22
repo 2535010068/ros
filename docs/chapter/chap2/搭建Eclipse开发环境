@@ -13,18 +13,18 @@ Eclipse本身基于 Java 开发，需要Java运行环境的支持，所以首先
 
 ### 1.检查是否安装 Java 环境
 
-打开终端输入 `java -version` ,如未安装如图所示：![alt text](<../../img/code/chap2/Screenshot from 2026-09-21 05-08-43.png>)
+打开终端输入 `java -version` ,如未安装如图所示：![结果显示](<../../img/code/chap2/Screenshot 1.png>)
 
 ### 2.安装 Java 环境
 
 通过APT安装OpenJDK,打开终端并运行以下命令：`sudo apt update`
 
 选择所需版本（如8、11、17等），运行以下命令（这里以11为例）：`sudo apt install openjdk-11-jdk`
-,结果如图：![alt text](<../../img/code/chap2/Screenshot from 2026-09-21 05-45-28.png>)
+,结果如图：![结果显示](<../../img/code/chap2/Screenshot 2.png>)
 
 ### 3.检验 Java 是否安装成功
 
-打开终端输入 `java -version` ,成功如图所示：![alt text](<../../img/code/chap2/Screenshot from 2026-09-21 05-52-38.png>)
+打开终端输入 `java -version` ,成功如图所示：![结果显示](<../../img/code/chap2/Screenshot 3.png>)
 
 ---
 
@@ -47,4 +47,4 @@ Eclipse本身基于 Java 开发，需要Java运行环境的支持，所以首先
 
 6.（可选）创建桌面快捷方式，输入`ln -s /opt/eclipse-cpp/eclipse ~/Desktop/Eclipse-cpp`
 
-如图所式：![alt text](<../../img/code/chap2/Screenshot from 2026-09-21 18-11-31.png>)
+如图所式：![结果显示](<../../img/code/chap2/Screenshot 4.png>)
