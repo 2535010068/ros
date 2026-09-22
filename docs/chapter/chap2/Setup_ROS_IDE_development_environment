@@ -1,4 +1,4 @@
-# 搭建Eclipse开发环境
+# 搭建ROS的IDE开发环境
 
 在ROS开发中，可以使用多种编辑器对代码进行修改，如Ubuntu系统自带的gedit、vi等。为了方便项目开发，很多开发者也会使用IDE进行开发，如Eclipse、Vim、Qt Creator、Pycharm、RoboWare等，具体配置也可以参考官方wiki：http://wiki.ros.org/IDEs。
 本篇以Eclipse为例，介绍ROS的IDE搭建过程。
