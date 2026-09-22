@@ -1,0 +1,50 @@
+# 搭建Eclipse开发环境
+
+在ROS开发中，可以使用多种编辑器对代码进行修改，如Ubuntu系统自带的gedit、vi等。为了方便项目开发，很多开发者也会使用IDE进行开发，如Eclipse、Vim、Qt Creator、Pycharm、RoboWare等，具体配置也可以参考官方wiki：http://wiki.ros.org/IDEs。
+本篇以Eclipse为例，介绍ROS的IDE搭建过程。
+
+---
+
+## 第一步：安装 Java
+
+介绍：Eclipse是一款万能的集成开发环境，适合各种编程语言的项目开发，而且通过丰富的插件可以无限扩展IDE的功能。
+
+Eclipse本身基于 Java 开发，需要Java运行环境的支持，所以首先需要确保计算机的Ubuntu系统中安装了Java。
+
+### 1.检查是否安装 Java 环境
+
+打开终端输入 `java -version` ,如未安装如图所示：![alt text](<../../img/code/chap2/Screenshot from 2026-09-21 05-08-43.png>)
+
+### 2.安装 Java 环境
+
+通过APT安装OpenJDK,打开终端并运行以下命令：`sudo apt update`
+
+选择所需版本（如8、11、17等），运行以下命令（这里以11为例）：`sudo apt install openjdk-11-jdk`
+,结果如图：![alt text](<../../img/code/chap2/Screenshot from 2026-09-21 05-45-28.png>)
+
+### 3.检验 Java 是否安装成功
+
+打开终端输入 `java -version` ,成功如图所示：![alt text](<../../img/code/chap2/Screenshot from 2026-09-21 05-52-38.png>)
+
+---
+
+## 第二步：下载 Eclipse IDE
+
+登录 Eclipse的官方网站（http://www.eclipse.org/downloads/packages/）
+，下载 Linux x86_64版本的 Eclipse IDE for C/C++ Developers。
+
+## 3.解压 Eclipse IDE
+
+1.打开终端输入 `cd ~Downloads` 
+
+2.解压安装包，输入 `tar -xzvf 下载的文件名`
+
+3.移动至/opt/，输入 `sudo mv eclipse /opt/eclipse-cpp` 或 `mv eclipse ~/eclipse-cpp`
+
+4.赋予执行权限并启动，依次输入 `cd /opt/eclipse-cpp` 、 `chmod +x eclipse` 、 `./eclipse`
+
+5.设置首次启动设置工作空间，建议新建一个专用文件夹，打开一个新终端，输入 `mkdir -p ~/eclipse-workspace` 然后在对话框中选择该路径，点击 `Launch` 即可
+
+6.（可选）创建桌面快捷方式，输入`ln -s /opt/eclipse-cpp/eclipse ~/Desktop/Eclipse-cpp`
+
+如图所式：![alt text](<../../img/code/chap2/Screenshot from 2026-09-21 18-11-31.png>)
